@@ -1,0 +1,15 @@
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.Application\obj\Debug\net5.0\InvoicesCreator.Application.csproj.AssemblyReference.cache
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.Application\obj\Debug\net5.0\InvoicesCreator.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.Application\obj\Debug\net5.0\InvoicesCreator.Application.AssemblyInfoInputs.cache
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.Application\obj\Debug\net5.0\InvoicesCreator.Application.AssemblyInfo.cs
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.Application\obj\Debug\net5.0\InvoicesCreator.Application.csproj.CoreCompileInputs.cache
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.Application\bin\Debug\net5.0\InvoicesCreator.Application.deps.json
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.Application\bin\Debug\net5.0\InvoicesCreator.Application.dll
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.Application\bin\Debug\net5.0\ref\InvoicesCreator.Application.dll
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.Application\bin\Debug\net5.0\InvoicesCreator.Application.pdb
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.Application\bin\Debug\net5.0\InvoicesCreator.Domain.dll
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.Application\bin\Debug\net5.0\InvoicesCreator.Domain.pdb
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.Application\obj\Debug\net5.0\InvoicesCreator.Application.csproj.CopyComplete
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.Application\obj\Debug\net5.0\InvoicesCreator.Application.dll
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.Application\obj\Debug\net5.0\ref\InvoicesCreator.Application.dll
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.Application\obj\Debug\net5.0\InvoicesCreator.Application.pdb

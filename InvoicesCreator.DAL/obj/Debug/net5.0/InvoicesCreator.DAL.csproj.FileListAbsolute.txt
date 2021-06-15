@@ -1,0 +1,17 @@
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.DAL\bin\Debug\net5.0\InvoicesCreator.DAL.deps.json
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.DAL\bin\Debug\net5.0\InvoicesCreator.DAL.dll
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.DAL\bin\Debug\net5.0\ref\InvoicesCreator.DAL.dll
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.DAL\bin\Debug\net5.0\InvoicesCreator.DAL.pdb
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.DAL\bin\Debug\net5.0\InvoicesCreator.Application.dll
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.DAL\bin\Debug\net5.0\InvoicesCreator.Domain.dll
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.DAL\bin\Debug\net5.0\InvoicesCreator.Application.pdb
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.DAL\bin\Debug\net5.0\InvoicesCreator.Domain.pdb
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.DAL\obj\Debug\net5.0\InvoicesCreator.DAL.csproj.AssemblyReference.cache
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.DAL\obj\Debug\net5.0\InvoicesCreator.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.DAL\obj\Debug\net5.0\InvoicesCreator.DAL.AssemblyInfoInputs.cache
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.DAL\obj\Debug\net5.0\InvoicesCreator.DAL.AssemblyInfo.cs
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.DAL\obj\Debug\net5.0\InvoicesCreator.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.DAL\obj\Debug\net5.0\InvoicesCreator.DAL.csproj.CopyComplete
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.DAL\obj\Debug\net5.0\InvoicesCreator.DAL.dll
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.DAL\obj\Debug\net5.0\ref\InvoicesCreator.DAL.dll
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.DAL\obj\Debug\net5.0\InvoicesCreator.DAL.pdb
