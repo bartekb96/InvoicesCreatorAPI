@@ -1,5 +1,7 @@
-﻿using InvoicesCreator.Application.Features.InvoiceFeatures.Commands;
+﻿using InvoicesCreator.Application.Features.ContractorFeatures.Queries;
+using InvoicesCreator.Application.Features.InvoiceFeatures.Commands;
 using InvoicesCreator.Application.Features.InvoiceFeatures.Queries;
+using InvoicesCreator.Application.Features.SellerFeatures.Queries;
 using InvoicesCreator.RestAPI.Controllers;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -75,6 +77,20 @@ namespace InvoicesCreator.RestApi.Controllers.v1
         {
             try
             {
+                var contractor = await Mediator.Send(new GetContractorByIdQuery { ContractorId = command.ContractorID });
+
+                if (contractor == null)
+                {
+                    return NotFound("Nie odnaleziono kontrahenta o podanym ID");
+                }
+
+                var seller = await Mediator.Send(new GetSellerByIdQuery { SellerId = command.SellerID });
+
+                if (seller == null)
+                {
+                    return NotFound("Nie odnaleziono sprzedawcy o podanym ID");
+                }
+
                 var result = await Mediator.Send(command);
 
                 if (result != null)
