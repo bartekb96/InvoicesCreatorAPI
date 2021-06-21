@@ -5404,9 +5404,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bartek\\source\\repos\\InvoicesCreator\\Test\\Test.csproj",
-      "projectName": "Test",
-      "projectPath": "C:\\Users\\Bartek\\source\\repos\\InvoicesCreator\\Test\\Test.csproj",
+      "projectUniqueName": "C:\\Users\\Bartek\\source\\repos\\InvoicesCreator\\Test\\InvoicesCreator.Test.csproj",
+      "projectName": "InvoicesCreator.Test",
+      "projectPath": "C:\\Users\\Bartek\\source\\repos\\InvoicesCreator\\Test\\InvoicesCreator.Test.csproj",
       "packagesPath": "C:\\Users\\Bartek\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Bartek\\source\\repos\\InvoicesCreator\\Test\\obj\\",
       "projectStyle": "PackageReference",

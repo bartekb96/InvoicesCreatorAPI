@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AgCjVomU01p+/d8QQ6kVSE3to4WB7ynx65FBKnC2vfxCT+ZeMn5LxRyXbA2OiCgU7bs9ew57IEoEq4wvfGi5dA==",
+  "dgSpecHash": "EDyu9RgG3VKcSul6UoK/7zuAzD6BdkRVyqYf8m7U3VLUamvLqwWz84jnCH415hMizbFrD1kHXuDKtX7lf6l6cw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bartek\\source\\repos\\InvoicesCreator\\Test\\Test.csproj",
+  "projectFilePath": "C:\\Users\\Bartek\\source\\repos\\InvoicesCreator\\Test\\InvoicesCreator.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Bartek\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\Bartek\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
