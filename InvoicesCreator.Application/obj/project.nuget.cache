@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "fC+tgdce+CeYXfao0xCW50a4aDd7nxfeTY3wKc+KfZTJmCK2Mg/lhHzQ5R+bXat12XngZm04lfDGs0y8joyveA==",
+  "dgSpecHash": "AshC7KkwprNkVWJRmv5Xi9zr+wrwH5As5eJhcS+Ku1axVl33YHaZguegXiUBt7Cpgqp7sHRadAXxpYoVVSPcyQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Bartek\\source\\repos\\InvoicesCreator\\InvoicesCreator.Application\\InvoicesCreator.Application.csproj",
   "expectedPackageFiles": [
@@ -19,7 +19,8 @@
     "C:\\Users\\Bartek\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
     "C:\\Users\\Bartek\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
     "C:\\Users\\Bartek\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
-    "C:\\Users\\Bartek\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512"
+    "C:\\Users\\Bartek\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512",
+    "C:\\Users\\Bartek\\.nuget\\packages\\system.security.cryptography.protecteddata\\5.0.0\\system.security.cryptography.protecteddata.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

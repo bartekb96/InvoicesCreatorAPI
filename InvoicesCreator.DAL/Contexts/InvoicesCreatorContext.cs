@@ -1,5 +1,6 @@
 ﻿using InvoicesCreator.Application.Interfaces;
 using InvoicesCreator.Domain;
+using InvoicesCreator.Domain.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -26,6 +27,8 @@ namespace InvoicesCreator.DAL.Contexts
 
             modelBuilder.Entity<Seller>().HasOne(i => i.Invoice).WithOne(s => s.Seller).HasForeignKey<Invoice>(s => s.SellerID);
             modelBuilder.Entity<Contractor>().HasOne(i => i.Invoice).WithOne(s => s.Contractor).HasForeignKey<Invoice>(s => s.ContractorID);
+            
+            modelBuilder.Entity<Seller>().HasOne(s => s.User).WithOne(u => u.Seller).HasForeignKey<User>(u => u.SellerID);
 
             modelBuilder.Entity<Contractor>().HasOne(c => c.Address).WithOne(a => a.Contractor).HasForeignKey<ContractorAddress>(a => a.ContractorId).OnDelete(DeleteBehavior.ClientCascade);
             modelBuilder.Entity<Seller>().HasOne(c => c.Address).WithOne(a => a.Seller).HasForeignKey<SellerAddress>(a => a.SellerId).OnDelete(DeleteBehavior.ClientCascade);
@@ -41,6 +44,7 @@ namespace InvoicesCreator.DAL.Contexts
         public DbSet<Contractor> Contractors { get; set; }
         public DbSet<InvoicePosition> InvoicePositions { get; set; }
         public DbSet<Invoice> Invoices { get; set; }
+        public DbSet<User> Users { get; set; }
 
         public async Task<int> SaveChanges()
         {

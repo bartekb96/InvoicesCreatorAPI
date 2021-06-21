@@ -1,6 +1,6 @@
 ﻿using InvoicesCreator.Application.Interfaces;
-using InvoicesCreator.Domain;
 using InvoicesCreator.Domain.Enums;
+using InvoicesCreator.Domain.Models;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using System;

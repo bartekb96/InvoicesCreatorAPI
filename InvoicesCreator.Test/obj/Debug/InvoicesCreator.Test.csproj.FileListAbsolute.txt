@@ -1,0 +1,17 @@
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.Test\bin\Debug\xunit.abstractions.dll
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.Test\bin\Debug\xunit.runner.visualstudio.testadapter.dll
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.Test\bin\Debug\xunit.runner.reporters.net452.dll
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.Test\bin\Debug\xunit.runner.utility.net452.dll
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.Test\bin\Debug\InvoicesCreator.Test.dll
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.Test\bin\Debug\InvoicesCreator.Test.pdb
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.Test\bin\Debug\xunit.assert.dll
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.Test\bin\Debug\xunit.core.dll
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.Test\bin\Debug\xunit.execution.desktop.dll
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.Test\bin\Debug\xunit.assert.xml
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.Test\bin\Debug\xunit.core.xml
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.Test\bin\Debug\xunit.execution.desktop.xml
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.Test\obj\Debug\InvoicesCreator.Test.csproj.AssemblyReference.cache
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.Test\obj\Debug\InvoicesCreator.Test.csproj.CoreCompileInputs.cache
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.Test\obj\Debug\InvoicesCreator.Test.csproj.CopyComplete
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.Test\obj\Debug\InvoicesCreator.Test.dll
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.Test\obj\Debug\InvoicesCreator.Test.pdb

@@ -1,4 +1,5 @@
 ﻿using InvoicesCreator.Domain;
+using InvoicesCreator.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -16,6 +17,7 @@ namespace InvoicesCreator.Application.Interfaces
         DbSet<Contractor> Contractors { get; set; }
         DbSet<InvoicePosition> InvoicePositions { get; set; }
         DbSet<Invoice> Invoices { get; set; }
+        DbSet<User> Users { get; set; }
 
         Task<int> SaveChanges();
     }

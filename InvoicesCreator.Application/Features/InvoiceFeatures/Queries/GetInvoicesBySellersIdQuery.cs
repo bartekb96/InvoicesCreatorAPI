@@ -1,5 +1,5 @@
 ﻿using InvoicesCreator.Application.Interfaces;
-using InvoicesCreator.Domain;
+using InvoicesCreator.Domain.Models;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -26,12 +26,13 @@ namespace InvoicesCreator.Application.Features.InvoiceFeatures.Queries
             public async Task<IEnumerable<Invoice>> Handle(GetInvoicesBySellersIdQuery command, CancellationToken token)
             {
                 var invoices = await _invoicesCreatorContext.Invoices
+                    .AsNoTracking()
+                    .Where(i => i.Seller.Id == command.SellersID)
                     .Include(i => i.Seller)
                     .ThenInclude(i => i.Address)
                     .Include(i => i.Contractor)
                     .ThenInclude(i => i.Address)
                     .Include(i => i.Positions)
-                    .Where(i => i.Seller.Id == command.SellersID)
                     .ToListAsync();
                 
                 if (invoices == null)

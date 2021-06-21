@@ -1,5 +1,5 @@
 ﻿using InvoicesCreator.Application.Interfaces;
-using InvoicesCreator.Domain;
+using InvoicesCreator.Domain.Models;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -26,7 +26,7 @@ namespace InvoicesCreator.Application.Features.ContractorFeatures.Queries
 
             public async Task<Contractor> Handle(GetContractorByIdQuery command, CancellationToken token)
             {
-                var contractor = await _invoicesCreatorContext.Contractors.FirstOrDefaultAsync(c => c.Id == command.ContractorId);
+                var contractor = await _invoicesCreatorContext.Contractors.AsNoTracking().FirstOrDefaultAsync(c => c.Id == command.ContractorId);
 
                 if (contractor == null)
                 {

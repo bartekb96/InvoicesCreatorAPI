@@ -10,7 +10,8 @@
         "dependencies": {
           "InvoicesCreator.Domain": "1.0.0",
           "MediatR.Extensions.Microsoft.DependencyInjection": "9.0.0",
-          "Microsoft.EntityFrameworkCore": "5.0.7"
+          "Microsoft.EntityFrameworkCore": "5.0.7",
+          "System.Security.Cryptography.ProtectedData": "5.0.0"
         },
         "runtime": {
           "InvoicesCreator.Application.dll": {}
@@ -160,6 +161,22 @@
           }
         }
       },
+      "System.Security.Cryptography.ProtectedData/5.0.0": {
+        "runtime": {
+          "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
+          }
+        }
+      },
       "InvoicesCreator.Domain/1.0.0": {
         "runtime": {
           "InvoicesCreator.Domain.dll": {}
@@ -284,6 +301,13 @@
       "sha512": "sha512-uXQEYqav2V3zP6OwkOKtLv+qIi6z3m1hsGyKwXX7ZA7htT4shoVccGxnJ9kVRFPNAsi1ArZTq2oh7WOto6GbkQ==",
       "path": "system.diagnostics.diagnosticsource/5.0.1",
       "hashPath": "system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512"
+    },
+    "System.Security.Cryptography.ProtectedData/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HGxMSAFAPLNoxBvSfW08vHde0F9uh7BjASwu6JF9JnXuEPhCY3YUqURn0+bQV/4UWeaqymmrHWV+Aw9riQCtCA==",
+      "path": "system.security.cryptography.protecteddata/5.0.0",
+      "hashPath": "system.security.cryptography.protecteddata.5.0.0.nupkg.sha512"
     },
     "InvoicesCreator.Domain/1.0.0": {
       "type": "project",

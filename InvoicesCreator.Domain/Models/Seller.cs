@@ -1,4 +1,5 @@
-﻿using System;
+﻿using InvoicesCreator.Domain.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -6,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InvoicesCreator.Domain
+namespace InvoicesCreator.Domain.Models
 {
     public class Seller : BaseEntity
     {
@@ -40,5 +41,8 @@ namespace InvoicesCreator.Domain
 
         [Required]
         public SellerAddress Address { get; set; }
+
+        [NotMapped]
+        public User User { get; set; }
     }
 }

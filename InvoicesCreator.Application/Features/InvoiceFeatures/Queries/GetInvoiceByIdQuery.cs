@@ -1,5 +1,5 @@
 ﻿using InvoicesCreator.Application.Interfaces;
-using InvoicesCreator.Domain;
+using InvoicesCreator.Domain.Models;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -25,7 +25,7 @@ namespace InvoicesCreator.Application.Features.InvoiceFeatures.Queries
 
             public async Task<Invoice> Handle(GetInvoiceByIdQuery command, CancellationToken token)
             {
-                var invoice = await _invoicesCreatorContext.Invoices.FirstOrDefaultAsync(i => i.Id == command.InvoiceId);
+                var invoice = await _invoicesCreatorContext.Invoices.AsNoTracking().FirstOrDefaultAsync(i => i.Id == command.InvoiceId);
                 if(invoice == null)
                 {
                     return null;

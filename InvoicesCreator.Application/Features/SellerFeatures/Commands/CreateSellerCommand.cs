@@ -1,5 +1,5 @@
 ﻿using InvoicesCreator.Application.Interfaces;
-using InvoicesCreator.Domain;
+using InvoicesCreator.Domain.Models;
 using MediatR;
 using System;
 using System.Collections.Generic;

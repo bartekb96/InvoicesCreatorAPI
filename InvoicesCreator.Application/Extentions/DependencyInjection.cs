@@ -1,4 +1,6 @@
-﻿using MediatR;
+﻿using InvoicesCreator.Application.Interfaces;
+using InvoicesCreator.Application.Tools;
+using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -14,6 +16,8 @@ namespace InvoicesCreator.Application.Extentions
         public static void AddApplication(this IServiceCollection services)
         {
             services.AddMediatR(Assembly.GetExecutingAssembly());
+
+            services.AddSingleton<ICrypthography, CryptographyTool>();
         }
     }
 }

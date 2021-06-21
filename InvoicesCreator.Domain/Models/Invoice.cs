@@ -6,7 +6,7 @@ using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
-namespace InvoicesCreator.Domain
+namespace InvoicesCreator.Domain.Models
 {
     public class Invoice : BaseEntity
     {

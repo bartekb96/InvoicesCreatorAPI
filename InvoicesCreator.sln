@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoicesCreator.Domain", "InvoicesCreator.Domain\InvoicesCreator.Domain.csproj", "{D79F647A-4D76-44AD-A410-F2CBB79156F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvoicesCreator.Domain", "InvoicesCreator.Domain\InvoicesCreator.Domain.csproj", "{D79F647A-4D76-44AD-A410-F2CBB79156F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoicesCreator.Application", "InvoicesCreator.Application\InvoicesCreator.Application.csproj", "{B4302D79-E025-4DD3-B6A4-35CADA4777D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvoicesCreator.Application", "InvoicesCreator.Application\InvoicesCreator.Application.csproj", "{B4302D79-E025-4DD3-B6A4-35CADA4777D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoicesCreator.DAL", "InvoicesCreator.DAL\InvoicesCreator.DAL.csproj", "{CCF31293-0B5B-44F8-860B-54E231CBA1AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvoicesCreator.DAL", "InvoicesCreator.DAL\InvoicesCreator.DAL.csproj", "{CCF31293-0B5B-44F8-860B-54E231CBA1AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoicesCreator.RestAPI", "InvoicesCreator.RestAPI\InvoicesCreator.RestAPI.csproj", "{A29DBCAA-8C52-4FC2-BA0D-392739A96421}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvoicesCreator.RestAPI", "InvoicesCreator.RestAPI\InvoicesCreator.RestAPI.csproj", "{A29DBCAA-8C52-4FC2-BA0D-392739A96421}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{A4114EEE-CA05-414E-9784-9A578B054249}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{A29DBCAA-8C52-4FC2-BA0D-392739A96421}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A29DBCAA-8C52-4FC2-BA0D-392739A96421}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A29DBCAA-8C52-4FC2-BA0D-392739A96421}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4114EEE-CA05-414E-9784-9A578B054249}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4114EEE-CA05-414E-9784-9A578B054249}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4114EEE-CA05-414E-9784-9A578B054249}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4114EEE-CA05-414E-9784-9A578B054249}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

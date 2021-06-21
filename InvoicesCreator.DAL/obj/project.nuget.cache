@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "zvbFJ7r1b9j6z78GQMyWlVBvq49FwwJyjTLrzMdO67WphyqskuabWEHjVceyS2uZSBmalIVX8HwZry1Aj3G66g==",
+  "dgSpecHash": "86fLeAGel2cDnIANARXJ6vhYFUaJ7zKXji2qSBqAHKNTGD0J0UtLBMSLSecudgpEbGeGEPnidL3ktuhAu/Jh0Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\Bartek\\source\\repos\\InvoicesCreator\\InvoicesCreator.DAL\\InvoicesCreator.DAL.csproj",
   "expectedPackageFiles": [
@@ -87,7 +87,7 @@
     "C:\\Users\\Bartek\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
     "C:\\Users\\Bartek\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512",
     "C:\\Users\\Bartek\\.nuget\\packages\\system.security.cryptography.primitives\\4.3.0\\system.security.cryptography.primitives.4.3.0.nupkg.sha512",
-    "C:\\Users\\Bartek\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.7.0\\system.security.cryptography.protecteddata.4.7.0.nupkg.sha512",
+    "C:\\Users\\Bartek\\.nuget\\packages\\system.security.cryptography.protecteddata\\5.0.0\\system.security.cryptography.protecteddata.5.0.0.nupkg.sha512",
     "C:\\Users\\Bartek\\.nuget\\packages\\system.security.permissions\\4.7.0\\system.security.permissions.4.7.0.nupkg.sha512",
     "C:\\Users\\Bartek\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
     "C:\\Users\\Bartek\\.nuget\\packages\\system.security.securestring\\4.3.0\\system.security.securestring.4.3.0.nupkg.sha512",

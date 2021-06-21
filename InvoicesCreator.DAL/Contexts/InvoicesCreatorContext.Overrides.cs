@@ -1,4 +1,4 @@
-﻿using InvoicesCreator.Domain;
+﻿using InvoicesCreator.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyModel;
 using System;

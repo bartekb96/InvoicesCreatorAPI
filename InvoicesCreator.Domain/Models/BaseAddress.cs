@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace InvoicesCreator.Domain
+namespace InvoicesCreator.Domain.Models
 {
     public class BaseAddress : BaseEntity
     {
