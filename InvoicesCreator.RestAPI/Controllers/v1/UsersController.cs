@@ -1,5 +1,7 @@
-﻿using InvoicesCreator.Application.Features.UserFeatures.Commands;
+﻿using AutoMapper;
+using InvoicesCreator.Application.Features.UserFeatures.Commands;
 using InvoicesCreator.Application.Features.UserFeatures.Queries;
+using InvoicesCreator.RestAPI.Contracts.v1;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -12,9 +14,11 @@ namespace InvoicesCreator.RestAPI.Controllers.v1
     [ApiVersion("1.0")]
     public class UsersController : BaseController
     {
-        public UsersController()
-        {
+        private readonly IMapper _mapper;
 
+        public UsersController(IMapper mapper)
+        {
+            _mapper = mapper;
         }
 
         /// <summary>
@@ -66,9 +70,11 @@ namespace InvoicesCreator.RestAPI.Controllers.v1
             {
                 var result = await Mediator.Send(query);
 
-                if (result != null)
+                var userResponse = _mapper.Map<UserResponse>(result);
+
+                if (userResponse != null)
                 {
-                    return Ok(result);
+                    return Ok(userResponse);
                 }
 
                 return BadRequest("Niepoprawny login lub hasło");

@@ -1,0 +1,30 @@
+﻿<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+
+    <h3>Login Page</h3>
+    @ViewBag.error
+    <form method="post" asp-controller="users" asp-action="login">
+        <table border="0" cellpadding="2" cellspacing="2">
+            <tr>
+                @*<td>Nazwa użytkownika: </td>
+                <td><input type="text" name="username"></td>*@
+                <td>@Html.Label("Nazwa użytkownika: ")</td>
+                <td>@Html.TextBox("UserName")</td>                  
+            </tr>
+            <tr>
+                <td>Hasło: </td>
+                <td><input type="password" name="Password"></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td><input type="submit" value="Zaloguj"></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>

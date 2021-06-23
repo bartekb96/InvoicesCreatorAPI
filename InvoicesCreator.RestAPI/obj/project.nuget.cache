@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "pc751e+ewSersc5RIX7s2vcdqszrO1fntOkB44m0Oz9MYb1a06qfj+0k2GwhBzWt/DiUjmcckodUiOlcZtDudA==",
+  "dgSpecHash": "5vu1mZVQagpOFKQ/vXKIeE4pbKxq2Pd0uYb4WqLb+Z1wU3z2vKASNA0bPZlHXODYSmBM9nnvooKsvipWrt/W8w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Bartek\\source\\repos\\InvoicesCreator\\InvoicesCreator.RestAPI\\InvoicesCreator.RestAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Bartek\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\Bartek\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
     "C:\\Users\\Bartek\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Bartek\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\Bartek\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
@@ -78,7 +80,7 @@
     "C:\\Users\\Bartek\\.nuget\\packages\\system.private.datacontractserialization\\4.3.0\\system.private.datacontractserialization.4.3.0.nupkg.sha512",
     "C:\\Users\\Bartek\\.nuget\\packages\\system.private.uri\\4.3.2\\system.private.uri.4.3.2.nupkg.sha512",
     "C:\\Users\\Bartek\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
-    "C:\\Users\\Bartek\\.nuget\\packages\\system.reflection.emit\\4.3.0\\system.reflection.emit.4.3.0.nupkg.sha512",
+    "C:\\Users\\Bartek\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
     "C:\\Users\\Bartek\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.3.0\\system.reflection.emit.ilgeneration.4.3.0.nupkg.sha512",
     "C:\\Users\\Bartek\\.nuget\\packages\\system.reflection.emit.lightweight\\4.3.0\\system.reflection.emit.lightweight.4.3.0.nupkg.sha512",
     "C:\\Users\\Bartek\\.nuget\\packages\\system.reflection.extensions\\4.3.0\\system.reflection.extensions.4.3.0.nupkg.sha512",

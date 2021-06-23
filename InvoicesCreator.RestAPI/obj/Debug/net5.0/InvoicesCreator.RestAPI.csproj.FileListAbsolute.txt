@@ -69,3 +69,5 @@ C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\obj\Debug\n
 C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\obj\Debug\net5.0\ref\InvoicesCreator.RestAPI.dll
 C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\obj\Debug\net5.0\InvoicesCreator.RestAPI.pdb
 C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\obj\Debug\net5.0\InvoicesCreator.RestAPI.genruntimeconfig.cache
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

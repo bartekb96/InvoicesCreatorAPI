@@ -39,7 +39,7 @@ namespace InvoicesCreator.Application.Features.UserFeatures.Queries
                     return null;
                 }
 
-                return user;
+                return user;              
             }
         }
     }
