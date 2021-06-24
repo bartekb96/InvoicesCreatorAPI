@@ -27,19 +27,26 @@ namespace InvoicesCreator.WebApp.Controllers
             return View();
         }
 
-        [Route("login")]
+        [Route("Index")]
         [HttpPost]
-        public async Task<IActionResult> Login(User user)
+        public async Task<IActionResult> Index(User user)
         {
+            UserResponse userResponse = null;
+
             string data = JsonConvert.SerializeObject(user);
             
             if(await this._restClient.SendRequest(Enums.HttpMethod.POST, "Users/LogIn", data))
             {
-                var response = _restClient.responseString;
+                 userResponse = JsonConvert.DeserializeObject<UserResponse>(_restClient.responseString);
+            }
+
+            if(userResponse != null)
+            {
+                HttpContext.Session.SetString("username", userResponse.UserName);
             }
 
 
-            return View("Index");
+            return View("MainView");
         }
     }
 }

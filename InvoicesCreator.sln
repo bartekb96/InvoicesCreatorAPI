@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvoicesCreator.RestAPI", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvoicesCreator.Test", "Test\InvoicesCreator.Test.csproj", "{A4114EEE-CA05-414E-9784-9A578B054249}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoicesCreator.WebApp", "InvoicesCreator.WebApp\InvoicesCreator.WebApp.csproj", "{C048E59D-AC68-4CB5-BEE0-36A39171A76C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication", "WebApplication\WebApplication.csproj", "{D934991C-D349-45B2-BFD6-0DDE22E64534}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +41,10 @@ Global
 		{A4114EEE-CA05-414E-9784-9A578B054249}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4114EEE-CA05-414E-9784-9A578B054249}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4114EEE-CA05-414E-9784-9A578B054249}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C048E59D-AC68-4CB5-BEE0-36A39171A76C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C048E59D-AC68-4CB5-BEE0-36A39171A76C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C048E59D-AC68-4CB5-BEE0-36A39171A76C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C048E59D-AC68-4CB5-BEE0-36A39171A76C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D934991C-D349-45B2-BFD6-0DDE22E64534}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D934991C-D349-45B2-BFD6-0DDE22E64534}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D934991C-D349-45B2-BFD6-0DDE22E64534}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D934991C-D349-45B2-BFD6-0DDE22E64534}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -34,6 +34,7 @@
       "InvoicesCreator.WebApp/1.0.0": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.1",
+          "bootstrap": "5.0.1",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "5.0.0.0",
@@ -325,6 +326,7 @@
           "InvoicesCreator.WebApp.dll": {}
         }
       },
+      "bootstrap/5.0.1": {},
       "Newtonsoft.Json/13.0.1": {
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {
@@ -2041,6 +2043,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "bootstrap/5.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Pynev+4iZ5wOhOnN6nnx2Q+GuGUXg+GksQHU2FqdWKFAX66w7IxYchoiAIJBzdnoNrBRZkMJjoL09UK1+13VEA==",
+      "path": "bootstrap/5.0.1",
+      "hashPath": "bootstrap.5.0.1.nupkg.sha512"
     },
     "Newtonsoft.Json/13.0.1": {
       "type": "package",

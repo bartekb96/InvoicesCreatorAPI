@@ -30,16 +30,23 @@ namespace InvoicesCreator.Application.Features.UserFeatures.Queries
 
             public async Task<User> Handle(UserLogInQuery command, CancellationToken token)
             {
-                string encryptedPassword = _cryptography.Encrypt(command.Password);
+                try
+                {
+                    string encryptedPassword = _cryptography.Encrypt(command.Password);
 
-                var user = await _invoicesCreatorContext.Users.AsNoTracking().FirstOrDefaultAsync(c => c.UserName == command.UserName && c.Password == encryptedPassword);
+                    var user = await _invoicesCreatorContext.Users.AsNoTracking().FirstOrDefaultAsync(c => c.UserName == command.UserName && c.Password == encryptedPassword);
 
-                if (user == null)
+                    if (user == null)
+                    {
+                        return null;
+                    }
+
+                    return user;              
+                }
+                catch(Exception ex)
                 {
                     return null;
                 }
-
-                return user;              
             }
         }
     }
