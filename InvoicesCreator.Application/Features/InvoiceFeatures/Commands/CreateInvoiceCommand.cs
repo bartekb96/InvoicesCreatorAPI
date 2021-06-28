@@ -19,12 +19,13 @@ namespace InvoicesCreator.Application.Features.InvoiceFeatures.Commands
         public IEnumerable<Position> Positions { get; set; }
         public decimal TotalBrutto { get; set; }
         public decimal TotalNetto { get; set; }
+        public InvoiceTypeEnum Type { get; set; }
 
         public class Position
         {
             public string Name { get; set; }
             public decimal Quantity { get; set; }
-            public int Unit { get; set; }
+            public string Unit { get; set; }
             public decimal BruttoPrice { get; set; }
             public decimal NettoPrice { get; set; }
             public decimal TaxLevel { get; set; }
@@ -53,7 +54,7 @@ namespace InvoicesCreator.Application.Features.InvoiceFeatures.Commands
                     invoiceToAdd.Positions.Add(new InvoicePosition{
                         Name = position.Name,
                         Quantity = position.Quantity,
-                        Unit = (UnitEnum)position.Unit,
+                        Unit = position.Unit,
                         BruttoPrice = position.BruttoPrice,
                         NettoPrice = position.NettoPrice,
                         TaxLevel = position.TaxLevel,
@@ -64,6 +65,7 @@ namespace InvoicesCreator.Application.Features.InvoiceFeatures.Commands
 
                 invoiceToAdd.TotalBrutto = command.TotalBrutto;
                 invoiceToAdd.TotalNetto = command.TotalNetto;
+                invoiceToAdd.Type = command.Type;
 
                 var result = await _invoicesCreatorContext.Invoices.AddAsync(invoiceToAdd);
                 await _invoicesCreatorContext.SaveChanges();

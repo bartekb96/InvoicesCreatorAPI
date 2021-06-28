@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace InvoicesCreator.Domain.Enums
 {
-    public enum UnitEnum
+    public enum InvoiceTypeEnum
     {
-        szt,
-        kg,
-        dobaHotelowa
+        Zaliczkowa,
+        Koncowa
     }
 }

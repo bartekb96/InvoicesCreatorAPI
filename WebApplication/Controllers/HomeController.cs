@@ -13,7 +13,6 @@ using WebApplication.Models;
 
 namespace WebApplication.Controllers
 {
-    //[Route("Home")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -38,7 +37,7 @@ namespace WebApplication.Controllers
 
             if (userResponse != null)
             {
-                HttpContext.Session.SetString("username", userResponse.UserName);
+                HttpContext.Session.SetString("userId", userResponse.Id.ToString());
             }
 
             return View("AddInvoice");
@@ -54,10 +53,10 @@ namespace WebApplication.Controllers
             return View();
         }
 
-        public IActionResult AddInvoice()
-        {
-            return View();
-        }
+        //public IActionResult AddInvoice()
+        //{
+        //    return View();
+        //}
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

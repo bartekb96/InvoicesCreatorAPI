@@ -157,6 +157,10 @@ namespace InvoicesCreator.DAL.Migrations
                     b.Property<DateTime>("DateLastEdited")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("InvoiceNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
@@ -172,6 +176,9 @@ namespace InvoicesCreator.DAL.Migrations
 
                     b.Property<decimal>("TotalNetto")
                         .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("Type")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -234,8 +241,9 @@ namespace InvoicesCreator.DAL.Migrations
                     b.Property<decimal>("TotalNetto")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<int>("Unit")
-                        .HasColumnType("int");
+                    b.Property<string>("Unit")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 

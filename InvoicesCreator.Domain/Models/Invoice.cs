@@ -1,4 +1,5 @@
-﻿using System;
+﻿using InvoicesCreator.Domain.Enums;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -10,6 +11,10 @@ namespace InvoicesCreator.Domain.Models
 {
     public class Invoice : BaseEntity
     {
+        [Required]
+        [Display(Name = "Numer Faktury")]
+        public string InvoiceNumber { get; set; }
+
         [Required]
         [JsonIgnore]
         [Display(Name = "Sprzedawca")]
@@ -39,5 +44,9 @@ namespace InvoicesCreator.Domain.Models
         [Required]
         [Display(Name = "Wartosc Netto")]
         public decimal TotalNetto { get; set; }
+
+        [Required]
+        [Display(Name = "Typ Faktury")]
+        public InvoiceTypeEnum Type { get; set; }
     }
 }

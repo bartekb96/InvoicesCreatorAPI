@@ -1,5 +1,4 @@
-﻿using InvoicesCreator.Domain.Enums;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -22,7 +21,7 @@ namespace InvoicesCreator.Domain.Models
 
         [Required]
         [Display(Name = "Jednostka Miary")]
-        public UnitEnum Unit { get; set; }
+        public string Unit { get; set; }
 
         [Required]
         [Display(Name = "Cena Brutto")]
