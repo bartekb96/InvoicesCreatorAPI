@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 
 namespace WebApplication.DataModels.Enums
 {
-    public enum InvoiceTypeEnum
+    public enum UnitEnum
     {
-        Niezdefioniowana,
-        Zaliczkowa,
-        Koncowa
+        DobaHotelowa,
+        KG,
+        SZT
     }
 }

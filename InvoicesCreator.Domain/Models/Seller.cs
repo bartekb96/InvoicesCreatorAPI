@@ -37,7 +37,7 @@ namespace InvoicesCreator.Domain.Models
         public string Phone { get; set; }
 
         [NotMapped]
-        public Invoice Invoice { get; set; }
+        public List<Invoice> Invoices { get; set; }
 
         [Required]
         public SellerAddress Address { get; set; }

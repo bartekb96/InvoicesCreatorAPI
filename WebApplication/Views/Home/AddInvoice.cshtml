@@ -12,8 +12,12 @@
                 <div class="row">
 
                     <div class="col-md-12">
-                        @Html.TextBox("testTextBox", "", new { @class = "form-control" })
-                        @Html.EnumDropDownListFor()
+
+                        <div>
+                            <label for="InvoiceTypeDropDown">Typ Faktury: </label>
+                            @Html.DropDownList("invoice.InvoiceType", ViewBag.InvoiceTypeEnumList as SelectList)
+                        </div>
+
                     </div>
 
                     <div class="col-md-6">
@@ -107,9 +111,9 @@
                                     <td><input class="form-control" placeholder="Ilość" type="text" name="invoice.Positions[0].Quantity" /></td>
                                     <td>
                                         <select class="form-control" name="invoice.Positions[0].Unit">
-                                            <option>Doba hotelowa</option>
-                                            <option>Szt</option>
-                                            <option>Kg</option>
+                                        <option>Doba hotelowa</option>
+                                        <option>Szt</option>
+                                        <option>Kg</option>
                                         </select>
                                     </td>
                                     <td><input class="form-control" placeholder="Wysokość podatki" type="text" name="invoice.Positions[0].TaxLevel" /></td>
@@ -129,7 +133,7 @@
                     </div>
 
                 </div>
-</form>
+            </form>
         </div>
     </div>
 </div>

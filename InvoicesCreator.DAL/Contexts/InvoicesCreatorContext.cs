@@ -22,10 +22,7 @@ namespace InvoicesCreator.DAL.Contexts
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //modelBuilder.Entity<Invoice>().HasOne(i => i.Contractor).WithOne(c => c.Invoice).HasForeignKey<Contractor>(c => c.InvoiceId);
-            //modelBuilder.Entity<Invoice>().HasOne(i => i.Seller).WithOne(s => s.Invoice).HasForeignKey<Seller>(s => s.InvoiceId);
-
-            modelBuilder.Entity<Seller>().HasOne(i => i.Invoice).WithOne(s => s.Seller).HasForeignKey<Invoice>(s => s.SellerID);
+            modelBuilder.Entity<Invoice>().HasOne(i => i.Seller).WithMany(i => i.Invoices);
             modelBuilder.Entity<Contractor>().HasOne(i => i.Invoice).WithOne(s => s.Contractor).HasForeignKey<Invoice>(s => s.ContractorID);
             
             modelBuilder.Entity<Seller>().HasOne(s => s.User).WithOne(u => u.Seller).HasForeignKey<User>(u => u.SellerID);

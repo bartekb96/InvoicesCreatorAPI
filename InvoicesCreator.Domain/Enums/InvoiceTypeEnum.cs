@@ -8,6 +8,7 @@ namespace InvoicesCreator.Domain.Enums
 {
     public enum InvoiceTypeEnum
     {
+        Niezdefioniowana,
         Zaliczkowa,
         Koncowa
     }

@@ -1,7 +1,9 @@
-﻿using InvoicesCreator.Application.Features.ContractorFeatures.Queries;
+﻿using AutoMapper;
+using InvoicesCreator.Application.Features.ContractorFeatures.Queries;
 using InvoicesCreator.Application.Features.InvoiceFeatures.Commands;
 using InvoicesCreator.Application.Features.InvoiceFeatures.Queries;
 using InvoicesCreator.Application.Features.SellerFeatures.Queries;
+using InvoicesCreator.RestAPI.Contracts.v1;
 using InvoicesCreator.RestAPI.Controllers;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -15,9 +17,11 @@ namespace InvoicesCreator.RestApi.Controllers.v1
     [ApiVersion("1.0")]
     public class InvoicesController : BaseController
     {
-        public InvoicesController()
+        private readonly IMapper _mapper;
+
+        public InvoicesController(IMapper mapper)
         {
-                
+            _mapper = mapper;
         }
 
         /// <summary>
@@ -77,21 +81,23 @@ namespace InvoicesCreator.RestApi.Controllers.v1
         {
             try
             {
-                var contractor = await Mediator.Send(new GetContractorByIdQuery { ContractorId = command.ContractorID });
+                //var contractor = await Mediator.Send(new GetContractorByIdQuery { ContractorId = command.ContractorID });
 
-                if (contractor == null)
-                {
-                    return NotFound("Nie odnaleziono kontrahenta o podanym ID");
-                }
+                //if (contractor == null)
+                //{
+                //    return NotFound("Nie odnaleziono kontrahenta o podanym ID");
+                //}
 
-                var seller = await Mediator.Send(new GetSellerByIdQuery { SellerId = command.SellerID });
+                //var seller = await Mediator.Send(new GetSellerByIdQuery { SellerId = command.SellerID });
 
-                if (seller == null)
-                {
-                    return NotFound("Nie odnaleziono sprzedawcy o podanym ID");
-                }
+                //if (seller == null)
+                //{
+                //    return NotFound("Nie odnaleziono sprzedawcy o podanym ID");
+                //}
 
                 var result = await Mediator.Send(command);
+
+                var userResponse = _mapper.Map<InvoiceResponse>(result);
 
                 if (result != null)
                 {

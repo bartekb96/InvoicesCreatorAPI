@@ -13,6 +13,12 @@ namespace InvoicesCreator.RestAPI.MappingProfiles
         public DomainToResponseProfile()
         {
             CreateMap<User, UserResponse>();
+            CreateMap<Invoice, InvoiceResponse>();
+            CreateMap<Contractor, ContractorResponse>();
+            CreateMap<Seller, SellerResponse>();
+            CreateMap<SellerAddress, AddressResponse>();
+            CreateMap<ContractorAddress, AddressResponse>();
+            CreateMap<InvoicePosition, PositionsResponse>();
         }
     }
 }

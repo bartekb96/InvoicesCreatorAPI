@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using System;
@@ -9,6 +10,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using WebApplication.DataModels.Enums;
 using WebApplication.DataModels.Models;
+using WebApplication.Extentions;
 using WebApplication.Models;
 
 namespace WebApplication.Controllers
@@ -39,6 +41,8 @@ namespace WebApplication.Controllers
             {
                 HttpContext.Session.SetString("userId", userResponse.Id.ToString());
             }
+
+            ViewBag.InvoiceTypeEnumList = InvoiceTypeEnum.Niezdefioniowana.ToSelectList();
 
             return View("AddInvoice");
         }

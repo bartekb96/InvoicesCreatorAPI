@@ -9,3 +9,4 @@ C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.Domain\obj\Debug\ne
 C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.Domain\obj\Debug\net5.0\InvoicesCreator.Domain.dll
 C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.Domain\obj\Debug\net5.0\ref\InvoicesCreator.Domain.dll
 C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.Domain\obj\Debug\net5.0\InvoicesCreator.Domain.pdb
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.Domain\obj\Debug\net5.0\InvoicesCreator.Domain.csproj.AssemblyReference.cache
