@@ -18,6 +18,7 @@ namespace InvoicesCreator.Application.Extentions
             services.AddMediatR(Assembly.GetExecutingAssembly());
 
             services.AddSingleton<ICrypthography, CryptographyTool>();
+            services.AddSingleton<IPDFCreator, PDFCreator>();
         }
     }
 }

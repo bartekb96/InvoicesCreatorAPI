@@ -13,7 +13,7 @@ namespace WebApplication.DataModels.Models
 
         public string responseString { get; set; }
 
-        public HttpResponseMessage response { get; set; }
+        public Task<HttpResponseMessage> response { get; set; }
 
         public RestClientAbstract()
         {
@@ -42,31 +42,35 @@ namespace WebApplication.DataModels.Models
                 switch (method)
                 {
                     case Enums.HttpMethod.GET:
-                        response = await client.GetAsync(uri);
-                        if (response.IsSuccessStatusCode)
+                        response = client.GetAsync(uri);
+                        response.Wait();
+                        if (response.Result.IsSuccessStatusCode)
                         {
-                            responseString = await response.Content.ReadAsStringAsync();
+                            responseString = await response.Result.Content.ReadAsStringAsync();
                         }
                         break;
                     case Enums.HttpMethod.POST:
-                        response = await client.PostAsync(uri, content);
-                        if (response.IsSuccessStatusCode)
+                        response = client.PostAsync(uri, content);
+                        response.Wait();
+                        if (response.Result.IsSuccessStatusCode)
                         {
-                            responseString = await response.Content.ReadAsStringAsync();
+                            responseString = await response.Result.Content.ReadAsStringAsync();
                         }
                         break;
                     case Enums.HttpMethod.PUT:
-                        response = await client.PutAsync(uri, content);
-                        if (response.IsSuccessStatusCode)
+                        response = client.PutAsync(uri, content);
+                        response.Wait();
+                        if (response.Result.IsSuccessStatusCode)
                         {
-                            responseString = await response.Content.ReadAsStringAsync();
+                            responseString = await response.Result.Content.ReadAsStringAsync();
                         }
                         break;
                     case Enums.HttpMethod.DELETE:
-                        response = await client.DeleteAsync(uri);
-                        if (response.IsSuccessStatusCode)
+                        response = client.DeleteAsync(uri);
+                        response.Wait();
+                        if (response.Result.IsSuccessStatusCode)
                         {
-                            responseString = await response.Content.ReadAsStringAsync();
+                            responseString = await response.Result.Content.ReadAsStringAsync();
                         }
                         break;
                     default:

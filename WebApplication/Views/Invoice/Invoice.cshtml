@@ -1,0 +1,110 @@
+﻿@using WebApplication.DataModels.Models
+@model WebApplication.DataModels.Models.InvoiceResponse
+@{
+        ViewData["Title"] = "Invoice";
+        Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+
+<div id="invoice">
+    <div class="box">
+
+        <div class="row">
+
+            <div class="col-4">
+
+                <div class="logo">
+                    <img src="/Images/logo.png" class="rounded float-left"/>
+                </div>
+
+            </div>
+
+            <div class="col-8">
+                <div class="place_time_invoice">
+                    <label>Miejsce wystawienia: @Model.Seller.Address.City</label> <br />
+                    <label>Data wystawienia: @Model.DateCreated.ToShortDateString()</label> <br />
+                </div>
+                <div class="invoice_number">
+                    <h2>@Model.InvoiceNumber</h2> <br />
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="seller_and_contractor">
+                    <label style="font-weight:bold">NABYWCA</label> <br />
+                    @if (string.IsNullOrEmpty(@Model.Contractor.NIP))
+                    {
+                        <label>NIP: @Model.Contractor.NIP</label> <br />
+                    }
+                    <label>@Model.Contractor.FirstName @Model.Contractor.SecondName</label> <br />
+                    <label>@Model.Contractor.Address.PostCode, @Model.Contractor.Address.City</label> <br />
+                    <label>@Model.Contractor.Address.Street @Model.Contractor.Address.HouseNumber@Model.Contractor.Address.LocalNumber</label> <br />
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="seller_and_contractor">
+                    <label style="font-weight:bold">SPRZDAWCA</label> <br />
+                    <label>NIP: @Model.Seller.NIP</label> <br />
+                    <label>@Model.Seller.FirstName @Model.Seller.SecondName</label> <br />
+                    <label>@Model.Seller.Address.PostCode, @Model.Seller.Address.City</label> <br />
+                    <label>@Model.Seller.Address.Street @Model.Seller.Address.HouseNumber@Model.Seller.Address.LocalNumber</label> <br />
+                </div>
+            </div>
+
+
+            <div class="col-12">
+                <div class="position_list">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="col-md-1">Lp.</th>
+                                <th scope="col" class="col-md-2">Nazwa</th>
+                                <th scope="col" class="col-md-1">Ilość</th>
+                                <th scope="col" class="col-md-2">JM</th>
+                                <th scope="col" class="col-md-1">Cena Brutto/JM [zł]</th>
+                                <th scope="col" class="col-md-1">Wysokość podatku [%]</th>
+                                <th scope="col" class="col-md-2">Wartość Brutto [zł]</th>
+                                <th scope="col" class="col-md-2">Wartość Netto [zł]</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @for (int i = 1; i < Model.Positions.Count + 1; i++)
+                            {
+                                <tr>
+                                    <th scope="row">@i</th>
+                                    <td>@Model.Positions[i - 1].Name</td>
+                                    <td>@Model.Positions[i - 1].Quantity</td>
+                                    <td>@Model.Positions[i - 1].Unit</td>
+                                    <td>@Model.Positions[i - 1].BruttoPrice</td>
+                                    <td>@Model.Positions[i - 1].TaxLevel</td>
+                                    <td>@Model.Positions[i - 1].TotalBrutto</td>
+                                    <td>@Model.Positions[i - 1].TotalNetto</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div name="footer" class=" col-12">
+                <div class="summary">
+                    <label>Wartość całkowita Brutto: @Model.TotalBrutto PLN</label> <br />
+                    <label>Wartość całkowita Netto: @Model.TotalNetto PLN</label> <br />
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<button id="downloadPDF">Generate PDF</button>
+ 
+<script>
+    document.getElementById("downloadPDF").addEventListener("click", function () {
+        const element = document.getElementById("invoice");
+        html2pdf().from(element).save();
+    });
+</script>
+
+
+

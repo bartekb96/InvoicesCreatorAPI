@@ -144,6 +144,9 @@ namespace InvoicesCreator.DAL.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int>("ConnectedInvoiceId")
+                        .HasColumnType("int");
+
                     b.Property<int>("ContractorID")
                         .HasColumnType("int");
 

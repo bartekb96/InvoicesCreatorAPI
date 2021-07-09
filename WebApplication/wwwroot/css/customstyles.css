@@ -1,0 +1,49 @@
+﻿.place_time_invoice {
+    text-align: right;
+    font-weight: 500;
+    margin-right: 2cm;
+    margin-top: 2cm;
+}
+
+.invoice_number {
+/*    text-align: center;*/
+    padding: 100px 10px 100px 220px;
+}
+
+.box {
+    /*    max-width: 2480px;
+    max-height: 3508px;
+    padding: 50px 10px 50px 10px;*/
+
+    width: 21cm;
+    height: 29.7cm;
+    background: white;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+    box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+}
+
+.seller_and_contractor {
+    padding: 50px 10px 0px 10px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.position_list {
+    padding: 50px 10px 0px 10px;
+}
+
+.summary {
+    text-align: right;
+    font-weight: 700;
+    padding-bottom: 100px;
+    margin-right: 2cm;
+}
+
+.logo{
+    max-height: 220px;
+    max-width: 270px;
+    margin-top: 2cm;
+    margin-left: 2cm;
+}

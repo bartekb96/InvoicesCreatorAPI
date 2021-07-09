@@ -7,6 +7,8 @@ C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\bin\Debug\n
 C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\bin\Debug\net5.0\InvoicesCreator.RestAPI.dll
 C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\bin\Debug\net5.0\ref\InvoicesCreator.RestAPI.dll
 C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\bin\Debug\net5.0\InvoicesCreator.RestAPI.pdb
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\bin\Debug\net5.0\Humanizer.dll
 C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\bin\Debug\net5.0\MediatR.dll
 C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\bin\Debug\net5.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
@@ -27,14 +29,19 @@ C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\bin\Debug\n
 C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\bin\Debug\net5.0\Microsoft.OpenApi.dll
 C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\bin\Debug\net5.0\PdfSharp.Charting.dll
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\bin\Debug\net5.0\PdfSharp.dll
 C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
 C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\bin\Debug\net5.0\System.Drawing.Common.dll
 C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\bin\Debug\net5.0\System.Runtime.Caching.dll
 C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\bin\Debug\net5.0\de\PdfSharp.Charting.resources.dll
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\bin\Debug\net5.0\de\PdfSharp.resources.dll
 C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
@@ -45,6 +52,8 @@ C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\bin\Debug\n
 C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
 C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\bin\Debug\net5.0\InvoicesCreator.Application.dll
@@ -69,5 +78,3 @@ C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\obj\Debug\n
 C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\obj\Debug\net5.0\ref\InvoicesCreator.RestAPI.dll
 C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\obj\Debug\net5.0\InvoicesCreator.RestAPI.pdb
 C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\obj\Debug\net5.0\InvoicesCreator.RestAPI.genruntimeconfig.cache
-C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\bin\Debug\net5.0\AutoMapper.dll
-C:\Users\Bartek\source\repos\InvoicesCreator\InvoicesCreator.RestAPI\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

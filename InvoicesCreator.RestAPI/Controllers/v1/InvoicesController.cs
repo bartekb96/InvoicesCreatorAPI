@@ -59,9 +59,11 @@ namespace InvoicesCreator.RestApi.Controllers.v1
             {
                 var result = await Mediator.Send(new GetInvoiceByIdQuery { InvoiceId = id });
 
+                var invoiceResponse = _mapper.Map<InvoiceResponse>(result);
+
                 if (result != null)
                 {
-                    return Ok(result);
+                    return Ok(invoiceResponse);
                 }
 
                 return NotFound("Nie odnaleziono faktury o podanym ID");
@@ -97,11 +99,11 @@ namespace InvoicesCreator.RestApi.Controllers.v1
 
                 var result = await Mediator.Send(command);
 
-                var userResponse = _mapper.Map<InvoiceResponse>(result);
+                var invoiceResponse = _mapper.Map<InvoiceResponse>(result);
 
                 if (result != null)
                 {
-                    return Ok(result);
+                    return Ok(invoiceResponse);
                 }
 
                 return BadRequest("Nie udało się utworzyć nowej faktury");

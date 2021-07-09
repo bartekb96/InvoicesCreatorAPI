@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using WebApplication.DataModels.Enums;
 using WebApplication.DataModels.Models;
@@ -32,19 +33,30 @@ namespace WebApplication.Controllers
 
             string data = JsonConvert.SerializeObject(user);
 
-            if (await this._restClient.SendRequest(HttpMethod.POST, "Users/LogIn", data))
+            //if (await this._restClient.SendRequest(HttpMethod.POST, "Users/LogIn", data))
+            //{
+            //    userResponse = JsonConvert.DeserializeObject<UserResponse>(_restClient.responseString);
+            //}
+
+            //if (userResponse != null)
+            //{
+            //    HttpContext.Session.SetString("userId", userResponse.Id.ToString());
+            //}
+
+            //--------------------------------------------------------------------------------------------
+            InvoiceResponse invoiceResponse = null;
+
+            if (await this._restClient.SendRequest(HttpMethod.GET, "Invoices/GetInvoiceById/35", data))
             {
-                userResponse = JsonConvert.DeserializeObject<UserResponse>(_restClient.responseString);
+                invoiceResponse = JsonConvert.DeserializeObject<InvoiceResponse>(_restClient.responseString);
             }
 
-            if (userResponse != null)
-            {
-                HttpContext.Session.SetString("userId", userResponse.Id.ToString());
-            }
+            return View("~/Views/Invoice/Invoice.cshtml", invoiceResponse);
+            //--------------------------------------------------------------------------------------------
 
-            ViewBag.InvoiceTypeEnumList = InvoiceTypeEnum.Niezdefioniowana.ToSelectList();
+            //ViewBag.InvoiceTypeEnumList = InvoiceTypeEnum.Proforma.ToSelectList();
 
-            return View("AddInvoice");
+            //return View("AddInvoice");
         }
 
         public IActionResult Index()

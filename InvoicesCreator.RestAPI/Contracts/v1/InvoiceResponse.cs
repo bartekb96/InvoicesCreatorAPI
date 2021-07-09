@@ -22,5 +22,7 @@ namespace InvoicesCreator.RestAPI.Contracts.v1
         public decimal TotalNetto { get; set; }
 
         public InvoiceTypeEnum Type { get; set; }
+
+        public DateTime DateCreated { get; set; }
     }
 }

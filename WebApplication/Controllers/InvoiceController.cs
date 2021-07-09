@@ -8,15 +8,21 @@ using WebApplication.DataModels.Enums;
 using WebApplication.DataModels.Models;
 using Microsoft.AspNetCore.Http;
 using System.Text;
+using WebApplication.Extentions;
+using System.IO;
+using Microsoft.AspNetCore.Hosting;
 
 namespace WebApplication.Controllers
 {
     public class InvoiceController : Controller
     {
         private readonly RestClientAbstract _restClient;
-        public InvoiceController()
+        private readonly IHostingEnvironment _hostingEnvitonment;
+
+        public InvoiceController(IHostingEnvironment hostingEnvitonment)
         {
             _restClient = new RestClient();
+            _hostingEnvitonment = hostingEnvitonment;
         }
 
         public async Task<IActionResult> CreateInvoice(Invoice invoice)
@@ -42,7 +48,10 @@ namespace WebApplication.Controllers
                 invoiceResponse = JsonConvert.DeserializeObject<InvoiceResponse>(_restClient.responseString);
             }
 
-            return View("Views/Home/AddInvoice");
+            //ViewBag.InvoiceTypeEnumList = InvoiceTypeEnum.Proforma.ToSelectList();
+            //return View("~/Views/Home/AddInvoice.cshtml");
+
+            return View("~/Views/Invoice/Invoice.cshtml", invoiceResponse);
         }
     }
 }

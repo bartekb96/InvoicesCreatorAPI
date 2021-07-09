@@ -66,10 +66,12 @@ namespace InvoicesCreator.Application.Features.InvoiceFeatures.Commands
         public class CreateInvoiceCommandHandler : IRequestHandler<CreateInvoiceCommand, Invoice>
         {
             private readonly IInvoicesCreatorContext _invoicesCreatorContext;
+            private readonly IPDFCreator _PDFCreator;
 
-            public CreateInvoiceCommandHandler(IInvoicesCreatorContext invoicesCreatorContext)
+            public CreateInvoiceCommandHandler(IInvoicesCreatorContext invoicesCreatorContext, IPDFCreator PDFCreator)
             {
                 _invoicesCreatorContext = invoicesCreatorContext;
+                _PDFCreator = PDFCreator;
             }
 
             public async Task<Invoice> Handle(CreateInvoiceCommand command, CancellationToken token)
@@ -82,7 +84,7 @@ namespace InvoicesCreator.Application.Features.InvoiceFeatures.Commands
                     return null;
                 }
 
-                var seller = await _invoicesCreatorContext.Sellers.FirstOrDefaultAsync(s => s.Id == user.SellerID);
+                var seller = await _invoicesCreatorContext.Sellers.Where(s => s.Id == user.SellerID).Include(s => s.Address).FirstOrDefaultAsync();
                 invoiceToAdd.SellerID = seller.Id;
 
                 Domain.Models.ContractorAddress contractorAddress = new ContractorAddress{
@@ -129,17 +131,26 @@ namespace InvoicesCreator.Application.Features.InvoiceFeatures.Commands
 
                 switch (invoiceToAdd.Type)
                 {
+                    case InvoiceTypeEnum.Proforma:
+                        currentPeriodInvoicesCount = _invoicesCreatorContext.Invoices.Where(i => i.Type == InvoiceTypeEnum.Proforma && i.DateCreated >= StartDate).ToList().Count();
+                        invoiceNumber = $"FP/{currentPeriodInvoicesCount + 1}/{now.Month}/{now.Year}";
+                        break;
                     case InvoiceTypeEnum.Zaliczkowa:
                         currentPeriodInvoicesCount = _invoicesCreatorContext.Invoices.Where(i => i.Type == InvoiceTypeEnum.Zaliczkowa && i.DateCreated >= StartDate).ToList().Count();
                         invoiceNumber = $"FZ/{currentPeriodInvoicesCount + 1}/{now.Month}/{now.Year}";
                         break;
                     case InvoiceTypeEnum.Koncowa:
                         currentPeriodInvoicesCount = _invoicesCreatorContext.Invoices.Where(i => i.Type == InvoiceTypeEnum.Koncowa && i.DateCreated >= StartDate).ToList().Count();
-                        invoiceNumber = $"FZ/{currentPeriodInvoicesCount + 1}/{now.Month}/{now.Year}";
+                        invoiceNumber = $"FK/{currentPeriodInvoicesCount + 1}/{now.Month}/{now.Year}";
                         break;
                 }
 
                 invoiceToAdd.InvoiceNumber = invoiceNumber;
+
+                //if(await _PDFCreator.CreateInvoicePDF(invoiceToAdd))
+                //{
+
+                //}
 
                 var result = await _invoicesCreatorContext.Invoices.AddAsync(invoiceToAdd);
                 await _invoicesCreatorContext.SaveChanges();

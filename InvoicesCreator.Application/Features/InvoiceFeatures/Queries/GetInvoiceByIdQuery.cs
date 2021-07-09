@@ -25,7 +25,12 @@ namespace InvoicesCreator.Application.Features.InvoiceFeatures.Queries
 
             public async Task<Invoice> Handle(GetInvoiceByIdQuery command, CancellationToken token)
             {
-                var invoice = await _invoicesCreatorContext.Invoices.AsNoTracking().FirstOrDefaultAsync(i => i.Id == command.InvoiceId);
+                var invoice = await _invoicesCreatorContext.Invoices.AsNoTracking().Where(i => i.Id == command.InvoiceId)
+                    .Include(i => i.Seller).ThenInclude(s => s.Address)
+                    .Include(i => i.Contractor).ThenInclude(c => c.Address)
+                    .Include(i => i.Positions)
+                    .FirstOrDefaultAsync();
+
                 if(invoice == null)
                 {
                     return null;

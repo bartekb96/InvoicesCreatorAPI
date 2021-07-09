@@ -7,7 +7,7 @@ namespace WebApplication.DataModels.Enums
 {
     public enum InvoiceTypeEnum
     {
-        Niezdefioniowana,
+        Proforma,
         Zaliczkowa,
         Koncowa
     }

@@ -48,5 +48,9 @@ namespace InvoicesCreator.Domain.Models
         [Required]
         [Display(Name = "Typ Faktury")]
         public InvoiceTypeEnum Type { get; set; }
+
+        [Required]
+        [Display(Name = "Id Faktury Powiazanej")]
+        public int ConnectedInvoiceId { get; set; }
     }
 }
